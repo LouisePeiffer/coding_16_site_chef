@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Courgette';
-  src: url(../../public/fonts/Courgette/Courgette.Regular.ttf);
+  src: url(../../public/fonts/Courgette/Courgette-Regular.ttf);
 }
 
 /*!
@@ -15793,6 +15793,7 @@ header {
 
 header .carousel {
   position: absolute;
+  overflow: hidden;
 }
 
 header .carousel .carousel-indicators .indicateur {
@@ -15803,17 +15804,180 @@ header .carousel .carousel-indicators .indicateur {
 
 header .carousel .carousel-inner img {
   max-width: max-content;
-  filter: brightness(30%);
+  filter: brightness(20%);
 }
 
 header .navbar {
   position: absolute;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 3% 0;
+  z-index: 99;
+}
+
+header .navbar .navsides {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+header .navbar .navsides a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+header .navbar .navsides a:hover {
+  background-color: #C32F42;
+}
+
+header .navbar .navsides a span {
+  font-family: Ubuntu;
 }
 
 header .textbanner {
   position: absolute;
-  color: red;
-  top: 400px;
-  left: 500px;
+  left: 20%;
+  right: 20%;
+  top: 30%;
+  color: white;
+  font-family: Courgette;
+  font-size: 50px;
+  text-align: center;
+}
+
+header .textbanner p {
+  margin: 0;
+}
+
+header .textbanner p:nth-of-type(1) span:nth-of-type(1) {
+  text-transform: uppercase;
+  font-size: 70px;
+}
+
+header .textbanner p:nth-of-type(2) span:nth-of-type(1) {
+  text-transform: uppercase;
+  color: #C32F42;
+  font-size: 70px;
+}
+
+header .textbanner p:nth-of-type(2) span:nth-of-type(2) {
+  font-size: 70px;
+}
+
+header .textbanner p:nth-of-type(3) span {
+  font-size: 70px;
+}
+
+.divbutton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 20%;
+}
+
+.divbutton .btn {
+  border: none;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 15px 30px;
+  margin: 0 10px;
+}
+
+.divbutton .btn:nth-of-type(2) {
+  background-color: #C32F42;
+  color: white;
+}
+
+.bottomdec {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+
+@media screen and (max-width: 1230px) {
+  header .navbar .navsides {
+    font-size: 10px;
+  }
+  header .carousel .textbanner {
+    font-size: 30px;
+  }
+  header .carousel .textbanner p:nth-of-type(1) span:nth-of-type(1) {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+  header .carousel .textbanner p:nth-of-type(2) span:nth-of-type(1) {
+    text-transform: uppercase;
+    color: #C32F42;
+    font-size: 50px;
+  }
+  header .carousel .textbanner p:nth-of-type(2) span:nth-of-type(2) {
+    font-size: 50px;
+  }
+  header .carousel .textbanner p:nth-of-type(3) span {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 986px) {
+  header .navbar .navsides {
+    font-size: 8px;
+  }
+  header .carousel .textbanner {
+    font-size: 20px;
+  }
+  header .carousel .textbanner p:nth-of-type(1) span:nth-of-type(1) {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  header .carousel .textbanner p:nth-of-type(2) span:nth-of-type(1) {
+    text-transform: uppercase;
+    color: #C32F42;
+    font-size: 30px;
+  }
+  header .carousel .textbanner p:nth-of-type(2) span:nth-of-type(2) {
+    font-size: 30px;
+  }
+  header .carousel .textbanner p:nth-of-type(3) span {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  header .navbar {
+    justify-content: start;
+  }
+  header .navbar .navsides {
+    display: none;
+  }
+  header .navbar img {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar img {
+    width: 10%;
+  }
+  .carousel {
+    height: 500px;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .carousel .divbutton button {
+    font-size: 8px;
+    padding: 10px;
+  }
 }
