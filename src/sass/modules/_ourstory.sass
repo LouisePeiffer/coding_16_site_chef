@@ -1,0 +1,150 @@
+section
+    margin: 5% 10%
+    background-color: white
+    border: solid 1px lightgray
+    position: relative
+    padding: 0 10px
+    .br1
+        position: absolute
+        top: 0%
+        left: 0%
+    .br2
+        position: absolute
+        top: 0%
+        right: 0%
+    .br3
+        position: absolute
+        bottom: 0%
+        left: 0%
+    .br4
+        position: absolute
+        bottom: 0%
+        right: 0%
+    .divstory
+        display: flex
+        flex-direction: column
+        padding: 10% 25%
+        p
+            margin: 0
+            text-align: center
+        p:nth-of-type(1) 
+            font-family: Courgette
+            font-size: 35px
+            span
+                text-transform: uppercase
+                color: $rougemims
+                font-size: 45px
+        p:nth-of-type(2)
+            margin: 10% 0
+        p:nth-of-type(3) 
+            font-family: Courgette
+            font-size: 35px
+            span
+                text-transform: uppercase
+                color: $rougemims
+                font-size: 45px
+
+    .divmenu
+        display: flex
+        justify-content: center
+        margin: 0% 0% 20% 0%
+        .column1
+            div
+                display: flex
+                justify-content: center
+                flex-direction: column
+                padding: 20px 40px
+                margin-right: 0
+                text-align: center
+                border-bottom: 1px lightgray solid
+                &:hover
+                    border-right: 5px $rougemims solid
+                    i
+                        color: $rougemims
+                i
+                    font-size: 50px
+                    color: lightgray
+                    margin-bottom: 10px
+                span
+                    font-size: 25px
+                    font-family: Courgette
+        .column2
+            display: flex
+            flex-direction: column
+            border-left: 1px lightgray solid
+            padding-left: 5px
+            div
+                padding: 6px
+                margin: 5px
+                display: flex
+                align-items: center
+                border-bottom: 1px lightgray solid
+                img
+                    border-radius: 50%
+                    border: 5px lightgray solid
+                    width: 20%
+                .smalltext
+                    display: flex
+                    flex-direction: column
+                    align-items: start
+                    border: none
+                    p:nth-of-type(1)
+                        margin: 0 10px
+                        font-family: UbuntuBold
+                    p:nth-of-type(2)
+                        margin: 0 10px
+                span
+                    background-color: lightgray
+                    color: $rougemims
+                    font-family: UbuntuBold
+                    padding: 3px 10px                   
+        .column2_1
+            display: flex
+            flex-direction: column
+            div
+                padding: 6px
+                margin: 5px
+                display: flex
+                align-items: center
+                border-bottom: 1px lightgray solid
+                img
+                    border-radius: 50%
+                    border: 5px lightgray solid
+                    width: 20%
+                .smalltext
+                    display: flex
+                    flex-direction: column
+                    align-items: start
+                    border: none
+                    p:nth-of-type(1)
+                        margin: 0 10px
+                        font-family: UbuntuBold
+                    p:nth-of-type(2)
+                        margin: 0 10px
+                span
+                    background-color: lightgray
+                    color: $rougemims
+                    font-family: UbuntuBold
+                    padding: 3px 10px   
+
+@media screen and ( max-width: 1000px )
+    section
+        .divstory
+            padding: 10% 10%
+        .divmenu
+            .column1
+                div
+                display: flex
+                justify-content: center
+                flex-direction: column
+                padding: 20px 40px
+                margin: 5px 0px
+                text-align: center
+                //border-bottom: 1px lightgray solid
+                div
+                    &:hover
+                        border: 5px $rougemims solid
+            .column2
+                display: none
+            .column2_1
+                display: none

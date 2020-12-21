@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: 'UbuntuBold';
+  src: url(../../public/fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+
+@font-face {
   font-family: 'Courgette';
   src: url(../../public/fonts/Courgette/Courgette-Regular.ttf);
 }
@@ -15786,6 +15791,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   margin: 0;
   font-family: Ubuntu;
+  background-image: url(../../public/images/main_bg.jpg);
 }
 
 header .carousel {
@@ -15976,5 +15982,218 @@ header .textbanner p:nth-of-type(3) span {
   .carousel .divbutton button {
     font-size: 8px;
     padding: 10px;
+  }
+}
+
+section {
+  margin: 5% 10%;
+  background-color: white;
+  border: solid 1px lightgray;
+  position: relative;
+  padding: 0 10px;
+}
+
+section .br1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+section .br2 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+section .br3 {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+section .br4 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+section .divstory {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 25%;
+}
+
+section .divstory p {
+  margin: 0;
+  text-align: center;
+}
+
+section .divstory p:nth-of-type(1) {
+  font-family: Courgette;
+  font-size: 35px;
+}
+
+section .divstory p:nth-of-type(1) span {
+  text-transform: uppercase;
+  color: #C32F42;
+  font-size: 45px;
+}
+
+section .divstory p:nth-of-type(2) {
+  margin: 10% 0;
+}
+
+section .divstory p:nth-of-type(3) {
+  font-family: Courgette;
+  font-size: 35px;
+}
+
+section .divstory p:nth-of-type(3) span {
+  text-transform: uppercase;
+  color: #C32F42;
+  font-size: 45px;
+}
+
+section .divmenu {
+  display: flex;
+  justify-content: center;
+  margin: 0% 0% 20% 0%;
+}
+
+section .divmenu .column1 div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 40px;
+  margin-right: 0;
+  text-align: center;
+  border-bottom: 1px lightgray solid;
+}
+
+section .divmenu .column1 div:hover {
+  border-right: 5px #C32F42 solid;
+}
+
+section .divmenu .column1 div:hover i {
+  color: #C32F42;
+}
+
+section .divmenu .column1 div i {
+  font-size: 50px;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+section .divmenu .column1 div span {
+  font-size: 25px;
+  font-family: Courgette;
+}
+
+section .divmenu .column2 {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px lightgray solid;
+  padding-left: 5px;
+}
+
+section .divmenu .column2 div {
+  padding: 6px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px lightgray solid;
+}
+
+section .divmenu .column2 div img {
+  border-radius: 50%;
+  border: 5px lightgray solid;
+  width: 20%;
+}
+
+section .divmenu .column2 div .smalltext {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: none;
+}
+
+section .divmenu .column2 div .smalltext p:nth-of-type(1) {
+  margin: 0 10px;
+  font-family: UbuntuBold;
+}
+
+section .divmenu .column2 div .smalltext p:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+section .divmenu .column2 div span {
+  background-color: lightgray;
+  color: #C32F42;
+  font-family: UbuntuBold;
+  padding: 3px 10px;
+}
+
+section .divmenu .column2_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+section .divmenu .column2_1 div {
+  padding: 6px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px lightgray solid;
+}
+
+section .divmenu .column2_1 div img {
+  border-radius: 50%;
+  border: 5px lightgray solid;
+  width: 20%;
+}
+
+section .divmenu .column2_1 div .smalltext {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: none;
+}
+
+section .divmenu .column2_1 div .smalltext p:nth-of-type(1) {
+  margin: 0 10px;
+  font-family: UbuntuBold;
+}
+
+section .divmenu .column2_1 div .smalltext p:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+section .divmenu .column2_1 div span {
+  background-color: lightgray;
+  color: #C32F42;
+  font-family: UbuntuBold;
+  padding: 3px 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  section .divstory {
+    padding: 10% 10%;
+  }
+  section .divmenu .column1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin: 5px 0px;
+    text-align: center;
+  }
+  section .divmenu .column1 div:hover {
+    border: 5px #C32F42 solid;
+  }
+  section .divmenu .column2 {
+    display: none;
+  }
+  section .divmenu .column2_1 {
+    display: none;
   }
 }
