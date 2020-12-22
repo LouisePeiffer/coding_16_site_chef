@@ -16454,3 +16454,109 @@ section:nth-of-type(3) .divblog .salade .chose div span {
     flex-wrap: wrap;
   }
 }
+
+section:nth-of-type(4) {
+  margin: 0;
+  background-image: url(../../public/images/testimonials_background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  color: white;
+}
+
+section:nth-of-type(4) .titretesti p {
+  margin: 0;
+  text-align: center;
+  font-family: Courgette;
+  font-size: 35px;
+  color: white;
+}
+
+section:nth-of-type(4) .titretesti p span {
+  text-transform: uppercase;
+  color: #C32F42;
+  font-size: 45px;
+}
+
+section:nth-of-type(4) .touttesti {
+  display: flex;
+}
+
+section:nth-of-type(4) .touttesti .divtesti {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 4% 0;
+}
+
+section:nth-of-type(4) .touttesti .divtesti img {
+  height: 160px;
+  border: 5px solid lightgray;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+section:nth-of-type(4) .touttesti .divtesti div {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 10px;
+  height: 160px;
+}
+
+section:nth-of-type(4) .touttesti .divtesti div h3 {
+  font-size: 23px;
+}
+
+section:nth-of-type(4) .touttesti .divtesti div span {
+  color: #C32F42;
+}
+
+section:nth-of-type(4) .touttesti .divtesti2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 4% 0;
+}
+
+section:nth-of-type(4) .touttesti .divtesti2 img {
+  height: 160px;
+  border: 5px solid lightgray;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+section:nth-of-type(4) .touttesti .divtesti2 div {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 10px;
+  height: 160px;
+}
+
+section:nth-of-type(4) .touttesti .divtesti2 div h3 {
+  font-size: 23px;
+}
+
+section:nth-of-type(4) .touttesti .divtesti2 div span {
+  color: #C32F42;
+}
+
+@media screen and (max-width: 1075px) {
+  section:nth-of-type(4) .touttesti {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section:nth-of-type(4) .touttesti .divtesti {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section:nth-of-type(4) .touttesti .divtesti2 {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
