@@ -16560,3 +16560,68 @@ section:nth-of-type(4) .touttesti .divtesti2 div span {
     justify-content: center;
   }
 }
+
+section:nth-of-type(5) {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-of-type(5) .titreContact p {
+  margin: 0;
+  text-align: center;
+  font-family: Courgette;
+  font-size: 35px;
+}
+
+section:nth-of-type(5) .titreContact p span {
+  text-transform: uppercase;
+  color: #C32F42;
+  font-size: 45px;
+}
+
+section:nth-of-type(5) .bgred {
+  background-color: #C32F42;
+  display: flex;
+  padding: 3%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 45%;
+  border-radius: 15px;
+  margin-top: 5%;
+  color: white;
+}
+
+section:nth-of-type(5) .bgred div {
+  border-bottom: 1px solid lightgray;
+  margin: 10px;
+  width: 100%;
+}
+
+section:nth-of-type(5) .bgred div i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+section:nth-of-type(5) .bgred div a {
+  text-decoration: none;
+  color: white;
+}
+
+section:nth-of-type(5) .bgred div:nth-of-type(3) {
+  border: none;
+}
+
+section:nth-of-type(5) .bgred div:nth-of-type(3) i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  section:nth-of-type(5) .bgred {
+    width: 100%;
+  }
+}

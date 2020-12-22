@@ -1,0 +1,48 @@
+section:nth-of-type(5)
+    border: none
+    background: none
+    display: flex
+    flex-direction: column
+    align-items: center
+    .titreContact
+        p
+            margin: 0
+            text-align: center 
+            font-family: Courgette
+            font-size: 35px
+            span
+                text-transform: uppercase
+                color: $rougemims
+                font-size: 45px
+    .bgred
+        background-color: $rougemims
+        display: flex
+        padding: 3%
+        flex-direction: column
+        align-items: center
+        text-align: center
+        width: 45%
+        border-radius: 15px
+        margin-top: 5%
+        color: white
+        div
+            border-bottom: 1px solid lightgray
+            margin: 10px
+            width: 100%
+            i
+                font-size: 40px
+                margin-bottom: 10px
+            a
+                text-decoration: none
+                color: white
+        div:nth-of-type(3)
+            border: none
+            i
+                font-size: 40px
+                margin-bottom: 10px
+
+
+@media screen and ( max-width: 1000px )
+    section:nth-of-type(5)
+        .bgred
+            width: 100%
