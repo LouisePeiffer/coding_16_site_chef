@@ -16068,6 +16068,7 @@ section .divmenu .column1 div {
   margin-right: 0;
   text-align: center;
   border-bottom: 1px lightgray solid;
+  width: 200px;
 }
 
 section .divmenu .column1 div:hover {
@@ -16182,9 +16183,9 @@ section .divmenu .column2_1 div span {
   section .divmenu .column1 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 20px 40px;
-    margin: 5px 0px;
+    margin: 1%;
     text-align: center;
   }
   section .divmenu .column1 div:hover {
