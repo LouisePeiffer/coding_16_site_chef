@@ -1,0 +1,145 @@
+section:nth-of-type(3)
+    margin: 5% 10%
+    background-color: white
+    border: solid 1px lightgray
+    position: relative
+    padding: 0 10px
+    .boxgray1
+        position: absolute
+        top: 0%
+        left: 0%
+    .boxgray2
+        position: absolute
+        top: 0%
+        right: 0%
+    .boxgray3
+        position: absolute
+        bottom: 0%
+        left: 0%
+    .boxgray4
+        position: absolute
+        bottom: 0%
+        right: 0%
+    // BOOK Your Table
+    .titreBook
+        display: flex
+        flex-direction: column
+        padding: 7% 25%
+        p 
+            text-align: center
+            font-family: Courgette
+            font-size: 35px
+            margin: 0
+            span
+                text-transform: uppercase
+                color: $rougemims
+                font-size: 45px
+        img
+            width: 100%
+            height: 100%
+    .divtof
+        background-image: url(../../public/images/book_table_bg.jpg)
+        border-radius: 15px
+        padding: 5%
+        margin: 0 15% 0% 15%
+        display: flex
+        flex-direction: column
+        align-items: center
+        p
+            color: white
+            text-align: center
+            margin-bottom: 5%
+            span
+                font-size: 24px
+        .colinput
+            display: flex
+            justify-content: space-around
+            input
+                border-radius: 15px
+                margin: 0 5px 13px 5px
+                width: 90%
+                &:placeholder
+                    color: black
+                    opacity: 1
+            select
+                border-radius: 15px
+                margin: 0 5px 13px 5px
+                width: 90%
+    button
+        background-color: $rougemims
+        border: none
+        color: white
+        text-transform: uppercase
+        padding: 15px 25px
+        font-size: 15px
+        width: 25%
+        text-align: center
+        margin: auto
+        margin-top: 5%
+    .divblog
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 10%
+        .salade
+            display: flex
+            width: 100%
+            justify-content: center
+            .chose
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                margin: 2%
+                .trucchelou
+                    position: relative
+                    width: 400px
+                    height: 260px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    img
+                        border: 5px solid lightgray
+                        border-radius: 15px
+                        position: absolute
+                        width: 100%
+                    p
+                        background-color: $rougemims
+                        padding: 20px 10px
+                        color: white
+                        border-radius: 10px
+                        position: absolute
+                        width: 80%
+                        margin: 0
+                        bottom: 0%
+                div
+                    width: 100%
+                    padding: 0 40px
+                    margin: 5px 0
+                    span
+                        font-family: UbuntuBold
+                        text-align: left
+                        font-size: large
+                        
+
+
+@media screen and ( max-width: 870px )
+    section:nth-of-type(3)
+        .divtof
+            .colinput
+                flex-wrap: wrap
+            button
+                font-size: 13px
+                width: 50%
+@media screen and (min-width: 870px) and ( max-width: 1126px )
+    section:nth-of-type(3)
+        .divtof
+            button
+                font-size: 13px
+                width: 30%
+@media screen and ( max-width: 1144px )
+    section:nth-of-type(3)
+        .divblog
+            .salade
+                flex-wrap: wrap
+    
