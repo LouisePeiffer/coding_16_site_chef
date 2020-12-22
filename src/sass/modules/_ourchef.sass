@@ -1,0 +1,47 @@
+section:nth-of-type(2)
+    background-image: url(../../public/images/team_background.jpg)
+    background-size: cover
+    //-webkit-backdrop-filter: brightness(20%)
+    display: flex
+    flex-direction: column
+    align-items: center
+    color: white
+    margin: 0
+    .titreMeet
+        margin: 8% 0 5% 0
+        p
+            font-family: Courgette
+            text-align: center
+            font-size: 40px
+            margin-bottom: 0
+            span
+                color: $rougemims
+                text-transform: uppercase
+                font-size: 50px
+    .divchefs
+        display: flex
+        justify-content: center
+        margin: 0% 5% 8% 5%
+        div
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0 3% 0 3%
+            img
+                border-bottom: 1px solid #565453
+            p
+                text-align: center
+                font-family: UbuntuBold
+
+@media screen and ( max-width: 1100px )
+    section:nth-of-type(2)
+        .divchefs
+            flex-wrap: wrap
+            margin: 5% 0
+
+@media screen and ( max-width: 547px )
+    section:nth-of-type(2)
+        .divchefs
+            img
+                width: 60%
+    
