@@ -15830,6 +15830,7 @@ header .carousel .titmenu {
   top: 5%;
   right: 5%;
   display: none;
+  z-index: 101;
 }
 
 header .navbar {
@@ -15983,7 +15984,7 @@ header .textbanner p:nth-of-type(3) span {
     position: absolute;
     top: 8%;
     right: 5%;
-    display: block;
+    display: initial;
   }
   header .carousel .titmenu button {
     background-color: white;
