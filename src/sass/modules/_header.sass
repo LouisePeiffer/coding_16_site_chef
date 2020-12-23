@@ -1,4 +1,4 @@
-// CAROUSEL
+
 header
     //position: relative
     .carousel
@@ -9,12 +9,15 @@ header
                 border-radius: 50%
                 width: 12px
                 height: 12px
-            .active
-                //mettre le border
         .carousel-inner
             img
                 max-width: max-content
                 filter: brightness(20%)
+        .titmenu
+            position: absolute
+            top: 5%
+            right: 5%
+            display: none
     .navbar
         position: absolute
         color: white
@@ -139,6 +142,16 @@ header
 
 @media screen and ( max-width: 869px )
     header
+        .carousel
+            .titmenu
+                position: absolute
+                top: 8%
+                right: 5%
+                display: block
+                button
+                    background-color: white
+                    color: $rougemims
+                    font-family: UbuntuBold
         .navbar
             justify-content: start
             .navsides

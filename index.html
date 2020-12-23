@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 <body>
+    <div><a href="#heyhoe"><i class="fas fa-arrow-up arrow"></i></a></div>
 <!-- Tout le header -->
-    <header>
+    <header id="heyhoe">
         <nav class="navbar">
             <div class="navsides">
                 <a href=""><span>Home</span></a>
-                <a href=""><span>About Us</span></a>
-                <a href=""><span>Menu List</span></a>
-                <a href=""><span>Team</span></a>
+                <a href="#notrestory"><span>About Us</span></a>
+                <a href="#notremenu"><span>Menu List</span></a>
+                <a href="#notreteam"><span>Team</span></a>
             </div>
             <a href="./index.html"><img src="./public/images/logo.png" alt=""></a>
             <div class="navsides">
-                <a href=""><span>Reservation</span></a>
-                <a href=""><span>Blog</span></a>
-                <a href=""><span>Testimonials</span></a>
-                <a href=""><span>Contact Us</span></a>
+                <a href="#notrebook"><span>Reservation</span></a>
+                <a href="#notreblog"><span>Blog</span></a>
+                <a href="#notreclient"><span>Testimonials</span></a>
+                <a href="#notrecontact"><span>Contact Us</span></a>
             </div>
         </nav>
         <!-- Carousel qui contient tout : le carousel en lui même, titre-->
@@ -42,6 +43,16 @@
                 <img src="./public/images/banner1.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
+            <!-- Menu petit -->
+            <div class="btn-group titmenu">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+              </div>
             <!-- Boutons -->
             <div class="divbutton">
                 <button type="button" class="btn btn-light rounded-pill">Purchase Theme</button>
@@ -85,14 +96,14 @@
         <img src="./public/images/box-right-top.png" alt="" class="br2">
         <img src="./public/images/box-bottom-left.png" alt="" class="br3">
         <img src="./public/images/box-bottom_right.png" alt="" class="br4">
-        <div class="divstory">
+        <div class="divstory" id="notrestory">
             <p><span>Our</span> Story</p>
             <img src="./public/images/decoration_line.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque, fugiat enim repellendus non exercitationem eum, adipisci harum quibusdam, vitae atque magnam earum fuga temporibus illo beatae. Reiciendis nihil eveniet itaque libero, nulla natus omnis cupiditate voluptatum nisi. Blanditiis assumenda impedit ex expedita nostrum enim adipisci fuga eum quas, ipsam, recusandae, eos ducimus! Repellat modi libero nisi ullam, tenetur molestiae praesentium unde, excepturi magni necessitatibus nesciunt culpa quia repellendus natus!</p>
             <p><span>Our</span> Menu list</p>
             <img src="./public/images/decoration_line.png" alt="">
         </div>
-        <div class="divmenu">
+        <div class="divmenu" id="notremenu">
             <div class="column1">
                 <div><i class="fas fa-mug-hot"></i><span>Breakfast</span></div>
                 <div><i class="fas fa-hamburger"></i><span>Lunch</span></div>
@@ -188,7 +199,7 @@
     </section>
 
 <!-- Section MEET Our Chefs -->
-    <section>
+    <section id="notreteam">
         <div class="titreMeet">
             <p><span>Meet</span> Our Chefs</p>
             <img src="./public/images/decoration_line.png" alt="">
@@ -219,7 +230,7 @@
         <img src="./public/images/box-right-top-grey.png" alt="" class="boxgray2">
         <img src="./public/images/box-bottom-left-grey.png" alt="" class="boxgray3">
         <img src="./public/images/box-bottom_right-grey.png" alt="" class="boxgray4">
-        <div class="titreBook">
+        <div class="titreBook" id="notrebook">
             <p><span>Book</span> Your Table</p>
             <img src="./public/images/decoration_line.png" alt="">
         </div>
@@ -247,7 +258,7 @@
             </div>
             <button type="button" class="btn btn-light rounded-pill">Book Now</button>
         </div>
-        <div class="titreBook">
+        <div class="titreBook" id="notreblog">
             <p><span>Our</span> Blog</p>
             <img src="./public/images/decoration_line.png" alt="">
         </div>
@@ -286,7 +297,7 @@
     </section>
 
 <!-- Section CLIENT TESTIMONIALS -->
-    <section>
+    <section id="notreclient">
         <div class="titretesti">
             <p><span>Client</span> Testimonials</p>
             <img src="./public/images/decoration_line.png" alt="">
@@ -312,22 +323,22 @@
     </section>
 
 <!-- Section OUR CONTACT -->
-    <section>
+    <section id="notrecontact">
         <div class="titreContact">
             <p><span>Our</span> Contact</p>
             <img src="./public/images/decoration_line.png" alt="">
         </div>
         <div class="bgred">
             <div>
-                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://www.google.com/maps/place/MolenGeek/@50.855363,4.341225,15z/data=!4m2!3m1!1s0x0:0xc7799151146ebf77?sa=X&ved=2ahUKEwjCiO61_OPtAhUB2BoKHbnrBiIQ_BIwDXoECBkQBQ"><i class="fas fa-map-marker-alt"></i></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, deleniti?</p>
             </div>
             <div>
-                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+91-1234567890"><i class="fas fa-phone-alt"></i></a>
                 <a href="tel:+91-1234567890"><p>+91-1234567890</p></a>
             </div>
             <div>
-                <i class="fas fa-envelope"></i>
+                <a href="mailto:j'aibientotfini@ruina.skrr"><i class="fas fa-envelope"></i></a>
                 <a href="mailto:j'aibientotfini@ruina.skrr"><p>j'aibientotfini@ruina.skrr</p></a>
             </div>
         </div>
