@@ -4,6 +4,9 @@ section:nth-of-type(3)
     border: solid 1px lightgray
     position: relative
     padding: 0 10px
+    display: flex
+    flex-direction: column
+    align-items: center
     .boxgray1
         position: absolute
         top: 0%
@@ -20,11 +23,10 @@ section:nth-of-type(3)
         position: absolute
         bottom: 0%
         right: 0%
-    // BOOK Your Table
     .titreBook
-        display: flex
-        flex-direction: column
-        padding: 7% 25%
+        //display: flex
+        //flex-direction: column
+        margin: 7%
         p 
             text-align: center
             font-family: Courgette
@@ -125,6 +127,11 @@ section:nth-of-type(3)
 
 @media screen and ( max-width: 870px )
     section:nth-of-type(3)
+        .titreBook
+            p
+                font-size: 25px
+                span
+                    font-size: 35px
         .divtof
             .colinput
                 flex-wrap: wrap
@@ -142,4 +149,31 @@ section:nth-of-type(3)
         .divblog
             .salade
                 flex-wrap: wrap
-    
+
+@media screen and ( max-width: 375px )
+    section:nth-of-type(3)
+        .titreBook
+            margin-top: 25%
+        button:nth-of-type(1) 
+            font-size: 10px
+            width: 60%
+            padding: 10px 20px
+        .divtof
+            p
+                font-size: 15px
+                span
+                    font-size: 15px
+                    font-family: UbuntuBold
+        .divblog
+            .salade
+                width: 50%
+                .chose
+                    .trucchelou
+                        width: 250px
+                        height: 200px
+                        p
+                            font-size: 14px
+                            padding: 5px 5px
+            button
+                font-size: 10px
+                width: 40%

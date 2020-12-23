@@ -15963,13 +15963,13 @@ header .textbanner p:nth-of-type(3) span {
   header .navbar .navsides {
     display: none;
   }
-  header .navbar img {
+  header .navbar a {
     margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .navbar img {
+  .navbar a {
     width: 10%;
   }
   .carousel {
@@ -15980,8 +15980,8 @@ header .textbanner p:nth-of-type(3) span {
     object-fit: cover;
   }
   .carousel .divbutton button {
-    font-size: 8px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 14px 20px;
   }
 }
 
@@ -16199,6 +16199,24 @@ section .divmenu .column2_1 div span {
   }
 }
 
+@media screen and (max-width: 870px) {
+  section:nth-of-type(1) .divstory p {
+    font-size: 25px;
+  }
+  section:nth-of-type(1) .divstory p span {
+    font-size: 35px;
+  }
+  section:nth-of-type(1) .divstory p:nth-of-type(2) {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section:nth-of-type(1) .divstory p:nth-of-type(2) {
+    font-size: 14px;
+  }
+}
+
 section:nth-of-type(2) {
   background-image: url(../../public/images/team_background.jpg);
   background-size: cover;
@@ -16261,12 +16279,24 @@ section:nth-of-type(2) .divchefs div p {
   }
 }
 
+@media screen and (max-width: 870px) {
+  section:nth-of-type(2) .titreMeet p {
+    font-size: 25px;
+  }
+  section:nth-of-type(2) .titreMeet p span {
+    font-size: 35px;
+  }
+}
+
 section:nth-of-type(3) {
   margin: 5% 10%;
   background-color: white;
   border: solid 1px lightgray;
   position: relative;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section:nth-of-type(3) .boxgray1 {
@@ -16294,9 +16324,7 @@ section:nth-of-type(3) .boxgray4 {
 }
 
 section:nth-of-type(3) .titreBook {
-  display: flex;
-  flex-direction: column;
-  padding: 7% 25%;
+  margin: 7%;
 }
 
 section:nth-of-type(3) .titreBook p {
@@ -16433,6 +16461,12 @@ section:nth-of-type(3) .divblog .salade .chose div span {
 }
 
 @media screen and (max-width: 870px) {
+  section:nth-of-type(3) .titreBook p {
+    font-size: 25px;
+  }
+  section:nth-of-type(3) .titreBook p span {
+    font-size: 35px;
+  }
   section:nth-of-type(3) .divtof .colinput {
     flex-wrap: wrap;
   }
@@ -16452,6 +16486,39 @@ section:nth-of-type(3) .divblog .salade .chose div span {
 @media screen and (max-width: 1144px) {
   section:nth-of-type(3) .divblog .salade {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section:nth-of-type(3) .titreBook {
+    margin-top: 25%;
+  }
+  section:nth-of-type(3) button:nth-of-type(1) {
+    font-size: 10px;
+    width: 60%;
+    padding: 10px 20px;
+  }
+  section:nth-of-type(3) .divtof p {
+    font-size: 15px;
+  }
+  section:nth-of-type(3) .divtof p span {
+    font-size: 15px;
+    font-family: UbuntuBold;
+  }
+  section:nth-of-type(3) .divblog .salade {
+    width: 50%;
+  }
+  section:nth-of-type(3) .divblog .salade .chose .trucchelou {
+    width: 250px;
+    height: 200px;
+  }
+  section:nth-of-type(3) .divblog .salade .chose .trucchelou p {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  section:nth-of-type(3) .divblog button {
+    font-size: 10px;
+    width: 40%;
   }
 }
 
@@ -16561,6 +16628,15 @@ section:nth-of-type(4) .touttesti .divtesti2 div span {
   }
 }
 
+@media screen and (max-width: 870px) {
+  section:nth-of-type(4) .titretesti p {
+    font-size: 25px;
+  }
+  section:nth-of-type(4) .titretesti p span {
+    font-size: 35px;
+  }
+}
+
 section:nth-of-type(5) {
   border: none;
   background: none;
@@ -16626,6 +16702,15 @@ section:nth-of-type(5) .bgred div:nth-of-type(3) i {
   }
 }
 
+@media screen and (max-width: 870px) {
+  section:nth-of-type(5) .titreContact p {
+    font-size: 25px;
+  }
+  section:nth-of-type(5) .titreContact p span {
+    font-size: 35px;
+  }
+}
+
 footer {
   overflow: hidden;
   position: relative;
@@ -16674,7 +16759,12 @@ footer .footerbois div .about p {
   padding-right: 10px;
 }
 
-footer .footerbois div .about div i {
+footer .footerbois div .about div a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footerbois div .about div a i {
   margin-right: 5%;
   font-size: 25px;
 }
@@ -16721,5 +16811,26 @@ footer .footerbois div .popular div .btntag {
   }
   footer .footerbois div .popular div .btntag {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  footer .footerbois div .about h2 {
+    font-size: 18px;
+  }
+  footer .footerbois div .about div a i {
+    font-size: 20px;
+  }
+  footer .footerbois div .instagram h2 {
+    font-size: 18px;
+  }
+  footer .footerbois div .instagram div .ciaociao {
+    display: none;
+  }
+  footer .footerbois div .popular h2 {
+    font-size: 18px;
+  }
+  footer .footerbois div .popular div .bye {
+    display: none;
   }
 }
